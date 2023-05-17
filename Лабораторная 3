@@ -1,0 +1,30 @@
+Программа 1:
+
+def wordProcessing(word)
+if word.end_with?("cs")
+puts word.length ** 2
+else
+puts word.reverse
+end end wordProcessing("acs")
+puts "Input word: "
+f_word = gets.chomp
+wordProcessing(f_word)
+
+Программа 2:
+
+def numberPokmons(num)
+pokemons = []
+while num >0 do
+puts "Input pokemons name: "
+name=gets.chomp
+puts "Input pokemons color: "
+color=gets.chomp
+pokemon={"name: " => name, "color: " => color}
+pokemons.append(pokemon)
+num=num-1
+end
+puts pokemons
+end
+puts "How many pokemons to add? "
+num = gets.to_i
+numberPokmons(num)
